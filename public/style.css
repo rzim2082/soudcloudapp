@@ -1,0 +1,80 @@
+
+
+body {
+
+    
+    background-color: black;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+
+    
+}
+
+#scTitle {
+
+    margin-bottom: 5px;
+    
+
+}
+
+button {
+
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    
+
+}
+
+#image {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 400px;
+    width: 100%;
+    background-image: url(https://lh3.googleusercontent.com/-tY6pi48_GYg/AAAAAAAAAAI/AAAAAAAAHVs/Kj3eQ0d1l2o/s0-c-k-no-ns/photo.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+#songInfo div {
+    margin-top: 5px;
+    height: 30px;
+    font-size: 14px;
+
+
+}
+
+#controls button{
+
+    display: inline-block;
+    width: 23%;
+
+
+}
+
+#input  {
+
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 1em;
+
+}
+
+#search {
+
+    width: 100%;
+
+}
+
+#songCount {
+
+    margin-top: 5px;
+
+}
