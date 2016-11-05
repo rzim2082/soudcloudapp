@@ -79,7 +79,7 @@ var jukeBox = {
             jukeBox.playerMethods.play();
             jukeBox.playerMethods.on('finish', function(){
                 jukeBox.next();
-            })
+            });
             jukeBox.songCounter();
             jukeBox.renderChanges(jukeBox.songList[jukeBox.songIndex]);
         });
@@ -118,6 +118,28 @@ var jukeBox = {
 
 
     },
+
+    previous: function(){
+
+        if(jukeBox.songIndex === 0){
+
+            jukeBox.songIndex = jukeBox.songList.length -1;
+            jukeBox.play();
+
+        }else {
+
+            jukeBox.songIndex--;
+            jukeBox.play();
+
+        }
+
+    },
+
+    previousClick: $("#previous").on('click', function(){
+
+        jukeBox.previous();
+
+    }),
 
     nextClick: $('#next').on('click', function(){
 
@@ -160,7 +182,7 @@ var jukeBox = {
 
 
         if(jukeBox.songIndex === jukeBox.songList.length - 1){
-            song = 1;
+            song = jukeBox.songIndex;
         }else{
             song = jukeBox.songIndex + 1;
         }
